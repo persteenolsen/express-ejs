@@ -47,11 +47,6 @@ app.post('/add', function(req, res, next){
 		/********************************************
 		 * Express-validator module
 		 
-		req.body.comment = 'a <span>comment</span>';
-		req.body.username = '   a user    ';
-
-		req.sanitize('comment').escape(); // returns 'a &lt;span&gt;comment&lt;/span&gt;'
-		req.sanitize('username').trim(); // returns 'a user'
 		********************************************/
 		var person = {
 			name: req.sanitize('name').escape().trim(),
@@ -65,7 +60,7 @@ app.post('/add', function(req, res, next){
 				if (err) {
 					req.flash('error', err)
 					
-					// render to views/user/add.ejs
+					// render to views/person/add.ejs
 					res.render('person/add', {
 						title: 'Add a new Person',
 						name: user.name,
@@ -86,7 +81,7 @@ app.post('/add', function(req, res, next){
 			})
 		})
 	}
-	else {   //Display errors to user
+	else {   //Display errors to person
 		var error_msg = ''
 		errors.forEach(function(error) {
 			error_msg += error.msg + '<br>'
@@ -144,12 +139,7 @@ app.put('/edit/(:id)', function(req, res, next) {
 		
 		/********************************************
 		 * Express-validator module
-		 
-		req.body.comment = 'a <span>comment</span>';
-		req.body.username = '   a user    ';
-
-		req.sanitize('comment').escape(); // returns 'a &lt;span&gt;comment&lt;/span&gt;'
-		req.sanitize('username').trim(); // returns 'a user'
+		
 		********************************************/
 		var person = {
 			name: req.sanitize('name').escape().trim(),
@@ -163,7 +153,7 @@ app.put('/edit/(:id)', function(req, res, next) {
 				if (err) {
 					req.flash('error', err)
 					
-					// render to views/user/add.ejs
+					// render to views/person/add.ejs
 					res.render('person/edit', {
 						title: 'Edit the selected Person',
 						id: req.params.id,
