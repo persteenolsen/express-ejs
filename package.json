@@ -1,0 +1,30 @@
+{
+  "name": "crud-mysql",
+  "version": "1.0.0",
+  "description": "Node.js CRUD application using MySQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "crud",
+    "mysql"
+  ],
+  "author": "PSO",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0",
+    "zip-folder": "^1.0.0",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-flash": "0.0.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.13.0"
+  }
+}

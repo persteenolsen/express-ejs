@@ -1,0 +1,53 @@
+
+
+.body {margin: 0pt;}
+
+.header {margin: 0pt; height: 38pt; background-color: gray; }
+
+.menu-header { margin-top: 0pt; margin-left: 15pt; margin-right: 15pt;}
+
+.body-content { margin: 15pt; font-family: Verdana, sans-serif; font-size: 15px;}
+
+         
+.table-edit-add { border-spacing: 10px; border-collapse: separate; }
+
+.button-delete { width: 75px; background-color: #d9534f; color:white;}
+.button-edit { width: 75px; background-color: #ec971f;  color:white;}
+.button-add { width: 75px; background-color: #337ab7; color:white;}
+
+.link-edit {display:block;width:75px; background-color: #ec971f; color:white;}
+.link-edit:hover { text-decoration: none; background-color: #ec971f; color:white;}
+
+h1 {
+    color: green;
+    margin-left: 15px;   
+  }
+
+  #persons {
+    margin: 15px;   
+
+  }
+  #persons thead {
+    text-align: center;
+    font-family: "Verdana, sans-serif";
+    border: 1px thin #ddd;
+    font-size: 14pt;
+    color: green; 
+    background-color:white 
+      
+    }
+
+#persons td, #persons th {
+     text-align: center;
+     font-family: "Verdana, sans-serif";
+     border: 1px solid #ddd;
+     font-size: 14pt;
+     
+    }
+
+
+  #persons tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #persons thead:hover {color: green; background-color: white; cursor:default;}
+
+  #persons tbody > tr:hover {background-color: #ddd; cursor: pointer;}
