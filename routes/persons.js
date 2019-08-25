@@ -9,13 +9,13 @@ app.get('/', function(req, res, next) {
 			if (err) {
 				req.flash('error', err)
 				res.render('person/list', {
-					title: 'A list of Persons', 
+					title: 'Adminstrate the Persons', 
 					data: ''
 				})
 			} else {
 				// render to views/person/list.ejs template file
 				res.render('person/list', {
-					title: 'A list of Persons', 
+					title: 'Administrate the Persons', 
 					data: rows
 				})
 			}

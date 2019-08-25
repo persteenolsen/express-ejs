@@ -6,7 +6,7 @@
 
 .menu-header { margin-top: 0pt; margin-left: 15pt; margin-right: 15pt;}
 
-.body-content { margin: 15pt; font-family: Verdana, sans-serif; font-size: 15px;}
+.body-content { margin:0pt; font-family: Verdana, sans-serif; font-size: 15px;}
 
          
 .table-edit-add { border-spacing: 10px; border-collapse: separate; }
@@ -20,12 +20,12 @@
 
 h1 {
     color: green;
-    margin-left: 15px;   
+    margin-left: 0pt;   
   }
 
   #persons {
-    margin: 15px;   
-
+    margin: 15pt;   
+   
   }
   #persons thead {
     text-align: center;
@@ -33,7 +33,8 @@ h1 {
     border: 1px thin #ddd;
     font-size: 14pt;
     color: green; 
-    background-color:white 
+    background-color:white ;
+     
       
     }
 
