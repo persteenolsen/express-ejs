@@ -1,13 +1,15 @@
 {
   "name": "crud-mysql",
   "version": "1.0.0",
-  "description": "Node.js CRUD application using MySQL",
+  "description": "Express.js EJS Template CRUD application using MySQL",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "keywords": [
     "node",
+    "express",
+    "ejs",
     "crud",
     "mysql"
   ],

@@ -21,14 +21,28 @@ var myConnection  = require('express-myconnection')
  * Store database credentials in a separate config.js file
  * Load the file/module and its values
  */ 
-var config = require('./config')
+
+
+// Note: Change the connection information to config when uploading to Azure !!!!!!
+ /*var config = require('./config')
 var dbOptions = {
 	host:	  config.database.host,
 	user: 	  config.database.user,
 	password: config.database.password,
 	port: 	  config.database.port, 
 	database: config.database.db
-}
+}*/
+
+// Note: Change the connection information to config when uploading to GitHub !!!!!!
+
+var con = mysql.createConnection({
+	host: "yourdbhost",
+	user: "yourdbusername",
+	password: "yourdbpassword",
+	database: "yourdbname"
+	});
+ 
+
 /**
  * 3 strategies can be used
  * single: Creates single database connection which is never closed.
