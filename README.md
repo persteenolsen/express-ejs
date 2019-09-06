@@ -1,5 +1,5 @@
 
- This NodeJS Express Application is made using:
+ This Node Express Application was made using:
     
     - NodeJS
     - The Express framework
