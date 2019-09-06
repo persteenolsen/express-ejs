@@ -1,7 +1,7 @@
 
  This Node Express Application was made using:
     
-    - NodeJS
+    - Node.js
     - The Express framework
     - EJS View Template
     
