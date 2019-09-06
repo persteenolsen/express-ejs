@@ -35,13 +35,15 @@ var dbOptions = {
 
 // Note: Change the connection information to config when uploading to GitHub !!!!!!
 // Use this insted of Config file
-var con = mysql.createConnection({
-	host: "yourdbhost",
+
+
+var dbOptions = {
+	host: "yourdbhostname",
 	user: "yourdbusername",
 	password: "yourdbpassword",
 	database: "yourdbname"
-	});
- 
+}
+
 
 /**
  * 3 strategies can be used
@@ -50,6 +52,8 @@ var con = mysql.createConnection({
  * request: Creates new connection per new request. Connection is auto close when response ends.
  */ 
 app.use(myConnection(mysql, dbOptions, 'pool'))
+
+
 
 /**
  * setting up the templating view engine
