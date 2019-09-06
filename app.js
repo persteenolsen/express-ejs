@@ -34,7 +34,7 @@ var dbOptions = {
 }*/
 
 // Note: Change the connection information to config when uploading to GitHub !!!!!!
-
+// Use this insted of Config file
 var con = mysql.createConnection({
 	host: "yourdbhost",
 	user: "yourdbusername",
